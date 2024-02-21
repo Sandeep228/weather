@@ -4,25 +4,19 @@ import search from "./assets/icons/search.svg";
 import { useStateContext } from "./Context";
 import sunr from "./assets/icons/sunr.png";
 import suns from "./assets/icons/suns.png";
-
 import { BackgroundLayout, WeatherCard, MiniCard } from "./Components";
+
 function App() {
   const [input, setInput] = useState("");
   const { weather, thisLocation, values, setPlace, sun } = useStateContext();
-
-  console.log(sun);
   const submitCity = () => {
     setPlace(input);
     setInput("");
   };
 
   const formatTime = (time) => {
-    console.log(time);
-
     if (time) {
       const originalTime = new Date(time);
-
-      // Subtract 5 hours and 30 minutes
       const adjustedTime = new Date(
         originalTime.getTime() - 5 * 60 * 60 * 1000 - 30 * 60 * 1000
       );
@@ -46,7 +40,6 @@ function App() {
           <input
             onKeyUp={(e) => {
               if (e.key === "Enter") {
-                // sumit the form
                 submitCity();
               }
             }}
