@@ -2,7 +2,7 @@
 
 
 
-## [Live here]([https://sprightly-empanada-b4fef6.netlify.app/](https://weather-forecasting2.netlify.app/))
+## [Live here]([https://sprightly-empanada-b4fef6.netlify.app/](https://weather-forecasting2.netlify.app/)
 
 ## Key Features:
  - Get current weather condition
